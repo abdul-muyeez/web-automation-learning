@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webauto.it.webpagenavigates.NavigateTo">
+      <class name="webauto.it.mouseaction.MouseHover">
         <methods>
           <include name="closeBrowser"/>
-          <include name="nagivateToExmaple"/>
+          <include name="hover"/>
           <include name="openurl"/>
           <include name="startBrowser"/>
         </methods>
-      </class> <!-- webauto.it.webpagenavigates.NavigateTo -->
+      </class> <!-- webauto.it.mouseaction.MouseHover -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
