@@ -15,17 +15,17 @@ public class MouseHover extends BaseDriver {
 		@Test
 		public void hover() throws InterruptedException {
 			Actions mouseaction = new Actions(driver);
-			WebElement tvAndHome= driver.findElement(By.xpath("//span[normalize-space()='TV & Home Appliances']"));
+			WebElement tvAndHome= driver.findElement(By.xpath("//span[contains(text(),'TV & Home Appliances')]"));
 			mouseaction.moveToElement(tvAndHome).perform();
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 			
 			WebElement television= driver.findElement(By.xpath("//ul[@class='lzd-site-menu-root']/ul[7]/li[1]/a/span"));
 			mouseaction.moveToElement(television).perform();
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 		
-			WebElement tvcatagory= driver.findElement(By.xpath("//span[normalize-space()='OLED Televisions']"));
+			WebElement tvcatagory= driver.findElement(By.xpath("//span[contains(text(),'OLED Televisions')]"));
 			mouseaction.moveToElement(tvcatagory).perform();
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 		
 	}
 		
