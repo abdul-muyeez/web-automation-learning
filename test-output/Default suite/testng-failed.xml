@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webauto.it.mouseaction.MouseHover">
+      <class name="webauto.it.selectaction.KeyBoardEvents">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="hover"/>
-          <include name="openurl"/>
-          <include name="startBrowser"/>
+          <include name="startChromeBrowser"/>
+          <include name="closeChromeBrowser"/>
+          <include name="copyAndPaste"/>
         </methods>
-      </class> <!-- webauto.it.mouseaction.MouseHover -->
+      </class> <!-- webauto.it.selectaction.KeyBoardEvents -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

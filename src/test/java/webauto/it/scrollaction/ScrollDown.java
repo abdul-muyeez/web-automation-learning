@@ -9,9 +9,8 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import webauto.it.bd.BaseDriver;
 
-public class ScrollExampls {
+public class ScrollDown {
 	protected static String url = "https://www.daraz.com.bd/";
 	WebDriver driver;
 
@@ -30,10 +29,16 @@ public class ScrollExampls {
 	@Test(priority = 0)
 	public void scrollDown() throws InterruptedException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 		Thread.sleep(5000);
-	}
+	}	
+		@Test(priority = 1)
+		public void scrollUp() throws InterruptedException {
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("window.scrollTo(0,0)");
+			Thread.sleep(5000);
+		}
+
 
 	@AfterSuite
 	public void closeChromeBrowser() {
