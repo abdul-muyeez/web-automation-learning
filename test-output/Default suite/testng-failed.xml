@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webauto.it.selectaction.KeyBoardEvents">
+      <class name="webauto.it.assertion.SoftAssertion">
         <methods>
-          <include name="startChromeBrowser"/>
-          <include name="closeChromeBrowser"/>
-          <include name="copyAndPaste"/>
+          <include name="closeBrowser"/>
+          <include name="openurl"/>
+          <include name="softAssertion"/>
+          <include name="startBrowser"/>
         </methods>
-      </class> <!-- webauto.it.selectaction.KeyBoardEvents -->
+      </class> <!-- webauto.it.assertion.SoftAssertion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
