@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webauto.it.assertion.SoftAssertion">
+      <class name="webauto.it.frames.Iframeshandling">
         <methods>
           <include name="closeBrowser"/>
-          <include name="openurl"/>
-          <include name="softAssertion"/>
+          <include name="upenurl"/>
+          <include name="switchToFrame"/>
           <include name="startBrowser"/>
         </methods>
-      </class> <!-- webauto.it.assertion.SoftAssertion -->
+      </class> <!-- webauto.it.frames.Iframeshandling -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
